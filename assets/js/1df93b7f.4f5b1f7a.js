@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_9_tq_doc=self.webpackChunk_9_tq_doc||[]).push([[237],{9754:(t,c,s)=>{s.r(c),s.d(c,{default:()=>u});var e=s(6550),o=s(5893);function u(){return(0,o.jsx)(e.l_,{to:"/lib-docs/docs/intro"})}}}]);
