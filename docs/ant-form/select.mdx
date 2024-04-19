@@ -1,0 +1,123 @@
+---
+sidebar_position: 3
+title: 'Select'
+tags:
+  - form
+  - select
+---
+
+### Examples
+
+import AntForm from '@9troisquarts/ant-form';
+import { Card } from 'antd';
+import 'antd/dist/antd.css';
+
+export const BasicForm = () => (
+  <Card style={{ marginBottom: 16 }}>
+    <AntForm
+      schema={[
+          {
+            name: 'selectWithPresentation',
+            label: 'Selecteur',
+            input: {
+              type: 'select',
+              options: [
+                {
+                  value: 'potter',
+                  label: 'Harry potter', 
+                  children: (<strong>Harry potter</strong>)
+                },
+                {
+                  value: 'hermione',
+                  label: 'Hermione', 
+                  children: (<strong>Hermione</strong>)
+                }
+              ],
+              inputProps: {
+                mode: 'multiple'
+              }
+            }
+          }
+        ]}
+        object={{
+          date: '2022-01-01',
+          select: 'one',
+          id: 2,
+          files: [
+            {
+              id: 1,
+              name: 'toto.png',
+              canDestroy: true,
+            },
+            {
+              id: 2,
+              name: 'titi.png',
+              canDestroy: false,
+            },
+          ],
+        }}
+        errors={{ firstname: ['is required'] }}
+        onSubmit={(values) => console.log(values)}
+        onChange={(value, values) => console.log(value, values)}
+    />
+  </Card>
+)
+
+<BasicForm />
+
+```tsx
+import AntForm from '@9troisquarts/ant-form';
+import { Card } from 'antd';
+import 'antd/dist/antd.css';
+
+export const BasicForm = () => (
+  <Card style={{ marginBottom: 16 }}>
+    <AntForm
+      schema={[
+          {
+            name: 'selectWithPresentation',
+            label: 'Selecteur',
+            input: {
+              type: 'select',
+              options: [
+                {
+                  value: 'potter',
+                  label: 'Harry potter', 
+                  children: (<strong>Harry potter</strong>)
+                },
+                {
+                  value: 'hermione',
+                  label: 'Hermione', 
+                  children: (<strong>Hermione</strong>)
+                }
+              ],
+              inputProps: {
+                mode: 'multiple'
+              }
+            }
+          }
+        ]}
+        object={{
+          date: '2022-01-01',
+          select: 'one',
+          id: 2,
+          files: [
+            {
+              id: 1,
+              name: 'toto.png',
+              canDestroy: true,
+            },
+            {
+              id: 2,
+              name: 'titi.png',
+              canDestroy: false,
+            },
+          ],
+        }}
+        errors={{ firstname: ['is required'] }}
+        onSubmit={(values) => console.log(values)}
+        onChange={(value, values) => console.log(value, values)}
+    />
+  </Card>
+)
+```
