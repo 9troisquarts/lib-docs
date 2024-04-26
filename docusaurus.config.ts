@@ -113,6 +113,7 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} 9troisquarts. Built with Docusaurus.`,
     },
     prism: {
+      additionalLanguages: ['ruby'],
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
       additionalLanguages: ['ruby', 'json'],
